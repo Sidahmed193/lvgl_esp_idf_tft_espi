@@ -1,0 +1,9 @@
+build/
+sdkconfig
+sdkconfig.old
+.devcontainer/
+.vscode/
+components/lvgl
+components/arduino
+components/TFT_eSPI
+managed_components/
