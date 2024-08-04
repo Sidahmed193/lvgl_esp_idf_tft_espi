@@ -1,15 +1,18 @@
-the project has build problems, when i try to use tft_espi library to initialize my display using lv_tft_espi_create
-function after i set LV_USE_TFT_ESPI to 1 inside lv_conf.h it causes include errors in header and source files of my components
-such for example here : 
+Hello everyone,
+
+I'm encountering build problems in my project when I try to use the TFT_eSPI library 
+to initialize my display with the lv_tft_espi_create function. After setting LV_USE_TFT_ESPI to 1 inside lv_conf.h, 
+I get include errors in the header and source files of my components. For example:
 /components/lvgl/src/drivers/display/tft_espi/lv_tft_espi.cpp:12:10: fatal error: TFT_eSPI.h: No such file or directory
    12 | #include <TFT_eSPI.h>
-if i fix this using include_directories in main project cmake file this error goes and another pops 
-i failed to find the problem and i am stuck 
+If I fix this using include_directories in the main project CMake file, this error goes away, but another one pops up. I haven't been able to locate the root of the problem and would appreciate any help.
 
-i am using : 
-board esp32s3 
-tft screen ic st7735
-esp idf version 5.1.4
-arduino esp32 version 3.0.4
-lvgl version 9.1.1
-TFT_eSPI 2.5.43
+Here are the details of my setup:
+
+Board: ESP32-S3
+TFT Screen IC: ST7735
+ESP-IDF Version: 5.1.4
+Arduino ESP32 Version: 3.0.4
+LVGL Version: 9.1.1
+TFT_eSPI Version: 2.5.43
+Thanks in advance for your assistance!
