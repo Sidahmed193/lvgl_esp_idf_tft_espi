@@ -9,7 +9,8 @@ include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 #LVGL custom config file setup
 #idf_build_set_property(COMPILE_OPTIONS "-DLV_CONF_INCLUDE_SIMPLE=1" APPEND)
 #idf_build_set_property(COMPILE_OPTIONS "-I../main" APPEND)
-#include_directories(components/TFT_eSPI)
+include_directories(components/TFT_eSPI)
+#add_subdirectory(componenets/TFT_eSPI)
 #include_directories(components/arduino/cores/esp32)
 #include_directories(components/arduino/variants/esp32s3)
 

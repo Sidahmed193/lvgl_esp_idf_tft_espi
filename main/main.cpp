@@ -6,6 +6,8 @@
 #include <SPI.h>
 #include <esp_log.h>
 
+#define LV_CONF_INCLUDE_SIMPLE 1
+
 const char TAG[] = "main";
 
 static const uint16_t screenWidth = 128;
